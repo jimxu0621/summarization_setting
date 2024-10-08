@@ -33,7 +33,7 @@ def display_library_version(library):
     print(f"Using {library.__name__} v{library.__version__}")
 
 
-def setup_metest():
+def setup_mysumtest():
     # Check if we have a GPU
     if not is_gpu_available:
         print("No GPU was detected! This notebook can be *very* slow without a GPU")
