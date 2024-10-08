@@ -11,7 +11,7 @@ torch_to_cuda = {"1.10.0": "cu113", "1.9.0": "cu111", "1.9.1": "cu111"}
 def install_requirements():
     """Installs the required packages for the project."""
 
-    print("⏳ Installing base requirements ...")
+    print("Installing base requirements ...")
     cmd = ["python", "-m", "pip", "install", "-r"]
     cmd.append("requirements.txt")
     process_install = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
