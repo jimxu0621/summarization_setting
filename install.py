@@ -34,7 +34,7 @@ def install_requirements():
         stderr=subprocess.PIPE,
     )
 
-
+    import torch
     torch_version = torch.__version__.split("+")[0]
     print(f"⏳ Installing torch-scatter for torch v{torch_version} ...")
     if is_colab:
